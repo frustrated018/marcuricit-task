@@ -1,7 +1,9 @@
 ## TODO:
 
 - [x] Setup & initialize git
-- [] Create basic sidebar with shadcn components
-- [] Setup necessary routes
+- [x] Create basic sidebar with shadcn components
+- [x] Setup necessary routes
+- [] Create the Dashboard page with dummy data
 - [] Create the table
 - [] Create Forms with validation
+- [] Make the whole page Responsive
