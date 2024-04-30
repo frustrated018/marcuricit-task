@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "source": "Salary",
+    "date": "2024-04-01",
+    "amount": 3000.0
+  },
+  {
+    "id": "2",
+    "source": "Freelance Work",
+    "date": "2024-04-10",
+    "amount": 500.0
+  },
+  {
+    "id": "3",
+    "source": "Investments",
+    "date": "2024-04-20",
+    "amount": 200.0
+  },
+  {
+    "id": "4",
+    "source": "Side Hustle",
+    "date": "2024-04-25",
+    "amount": 150.0
+  },
+  {
+    "id": "5",
+    "source": "Gift",
+    "date": "2024-04-28",
+    "amount": 50.0
+  },
+  {
+    "id": "6",
+    "source": "Rental Income",
+    "date": "2024-04-05",
+    "amount": 600.0
+  },
+  {
+    "id": "7",
+    "source": "Dividends",
+    "date": "2024-04-08",
+    "amount": 75.0
+  },
+  {
+    "id": "8",
+    "source": "Refund",
+    "date": "2024-04-12",
+    "amount": 100.0
+  },
+  {
+    "id": "9",
+    "source": "Bonus",
+    "date": "2024-04-15",
+    "amount": 300.0
+  },
+  {
+    "id": "10",
+    "source": "Commission",
+    "date": "2024-04-18",
+    "amount": 250.0
+  },
+  {
+    "id": "11",
+    "source": "Royalties",
+    "date": "2024-04-22",
+    "amount": 150.0
+  },
+  {
+    "id": "12",
+    "source": "Grants",
+    "date": "2024-04-25",
+    "amount": 400.0
+  },
+  {
+    "id": "13",
+    "source": "Inheritance",
+    "date": "2024-04-30",
+    "amount": 1000.0
+  }
+]
