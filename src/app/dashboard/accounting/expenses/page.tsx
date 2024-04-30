@@ -3,11 +3,11 @@ import { Expenses, columns } from "./columns";
 import { DataTable } from "@/components/ui/data-table";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
-import expenseData from '@/assets/expenseData.json';
+import expenseData from "@/assets/expenseData.json";
 
 async function getData(): Promise<Expenses[]> {
   // This is where I would fetch data
-  return expenseData as Expenses[]
+  return expenseData as Expenses[];
 }
 
 // TODO: Add record should lead to a form
