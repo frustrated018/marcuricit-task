@@ -16,7 +16,7 @@ export default async function ExpensesPage() {
   const data = await getData();
 
   return (
-    <section className="bg-secondary min-h-screen py-10">
+    <section className="bg-secondary min-h-screen py-5">
       <div className="flex justify-between items-center container">
         <Button>
           Add record
