@@ -30,8 +30,8 @@ const Report = ({ reportName, input1, input2, input3 }: ReportProps) => {
                 Filters <Filter />
               </CardTitle>
             </CardHeader>
-            <CardContent className="grid grid-cols-7 gap-5">
-              <div className="col-span-2">
+            <CardContent className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-7 gap-5">
+              <div className="col-span-1 xl:col-span-2">
                 <Label>Date Range:</Label>
                 <DatePickerWithRange />
               </div>
