@@ -22,7 +22,7 @@ const collapsibleLinks = [
   { href: "/dashboard/accounting/expenses", label: "Expenses" },
   { href: "/dashboard/accounting/expense-categories", label: "Expense Categories" },
   { href: "/dashboard/accounting/income", label: "Income" },
-  { href: "/dashboard", label: "Income Categories" },
+  { href: "/dashboard/accounting/income-categories", label: "Income Categories" },
   { href: "/dashboard/accounting/accounting-report", label: "Accounting Report" },
   { href: "/dashboard/accounting/doctor-report", label: "Doctor Report" },
   { href: "/dashboard/accounting/contractor-report", label: "Contractors Report" },
