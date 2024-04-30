@@ -4,6 +4,14 @@ import { Input } from "@/components/ui/input";
 import { Plus } from "lucide-react";
 import { ExpenseCategories, columns } from "./columns";
 import expenseData from "@/assets/expenseData.json";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
 
 // TODO: Add Breadcrumbs
 
@@ -17,6 +25,24 @@ const ExpenseCategoriesPage = async () => {
 
   return (
     <section className="bg-secondary min-h-screen py-5">
+      <div className="container mb-5">
+        <Breadcrumb>
+          <BreadcrumbList>
+            <BreadcrumbItem>
+              <BreadcrumbLink href="/dashboard">Dashboard</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbLink>Accounting</BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage>Expense Categories</BreadcrumbPage>
+            </BreadcrumbItem>
+          </BreadcrumbList>
+        </Breadcrumb>
+      </div>
+
       <div className="flex justify-between items-center container">
         <Button>
           Add record
