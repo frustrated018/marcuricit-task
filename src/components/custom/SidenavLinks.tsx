@@ -21,7 +21,7 @@ import { LogOut, ScrollText } from "lucide-react";
 const collapsibleLinks = [
   { href: "/dashboard/accounting/expenses", label: "Expenses" },
   { href: "/dashboard/accounting/expense-categories", label: "Expense Categories" },
-  { href: "/dashboard", label: "Income" },
+  { href: "/dashboard/accounting/income", label: "Income" },
   { href: "/dashboard", label: "Income Categories" },
   { href: "/dashboard/accounting/accounting-report", label: "Accounting Report" },
   { href: "/dashboard/accounting/doctor-report", label: "Doctor Report" },
