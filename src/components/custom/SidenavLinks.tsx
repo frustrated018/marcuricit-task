@@ -5,7 +5,6 @@ import {
   CaretSortIcon,
   CircleIcon,
   DashboardIcon,
-  FileIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
@@ -17,6 +16,7 @@ import {
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { LogOut, ScrollText } from "lucide-react";
 
 const collapsibleLinks = [
   { href: "/bla", label: "Expenses" },
@@ -34,7 +34,7 @@ const SidenavLinks = () => {
 
   return (
     <section className="flex flex-col gap-3">
-      <Link href={"/"}>
+      <Link href={"/dashboard"}>
         <Button
           className={cn("items-center gap-2 justify-start w-full", {
             "text-blue-600": pathname === "/dashboard",
@@ -83,10 +83,16 @@ const SidenavLinks = () => {
         </CollapsibleContent>
       </Collapsible>
 
-      <Button className="items-center gap-2 justify-start" variant={"ghost"}>
-        <FileIcon className="size-5" />
+      <Button className="items-center gap-2 justify-start w-full" variant={"ghost"}>
+        <ScrollText className="size-5" />
         Invoice
       </Button>
+      <Link href="/">
+        <Button className="items-center gap-2 justify-start w-full" variant={"ghost"}>
+          <LogOut className="size-5" />
+          Log Out
+        </Button>
+      </Link>
     </section>
   );
 };
