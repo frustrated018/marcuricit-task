@@ -8,12 +8,19 @@ import { DatePickerWithRange } from "./DatePickerWithRange";
 import { Checkbox } from "../ui/checkbox";
 import { toast } from "sonner";
 
-const Report = () => {
+interface ReportProps {
+  reportName: string;
+  input1: string;
+  input2: string;
+  input3: string;
+}
+
+const Report = ({ reportName, input1, input2, input3 }: ReportProps) => {
   return (
     <div>
       <Card>
         <CardHeader>
-          <CardTitle>Accounting Report</CardTitle>
+          <CardTitle>{reportName} Report</CardTitle>
         </CardHeader>
 
         <CardContent>
@@ -29,15 +36,15 @@ const Report = () => {
                 <DatePickerWithRange />
               </div>
               <div>
-                <Label>Accountant</Label>
+                <Label>{input1}</Label>
                 <Input />
               </div>
               <div>
-                <Label>Audit</Label>
+                <Label>{input2}</Label>
                 <Input />
               </div>
               <div>
-                <Label>Type</Label>
+                <Label>{input3}</Label>
                 <Input />
               </div>
               <section className="space-y-2">
