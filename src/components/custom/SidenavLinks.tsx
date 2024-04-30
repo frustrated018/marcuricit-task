@@ -19,14 +19,14 @@ import { cn } from "@/lib/utils";
 import { LogOut, ScrollText } from "lucide-react";
 
 const collapsibleLinks = [
-  { href: "/bla", label: "Expenses" },
-  { href: "/bla", label: "Expense Categories" },
-  { href: "/bla", label: "Income" },
-  { href: "/bla", label: "Income Categories" },
-  { href: "/bla", label: "Accounting Report" },
-  { href: "/bla", label: "Doctor Report" },
-  { href: "/bla", label: "Contractors Report" },
-  { href: "/bla", label: "Summary" },
+  { href: "/dashboard/accounting/expenses", label: "Expenses" },
+  { href: "/dashboard/accounting/expense-categories", label: "Expense Categories" },
+  { href: "/dashboard", label: "Income" },
+  { href: "/dashboard", label: "Income Categories" },
+  { href: "/dashboard", label: "Accounting Report" },
+  { href: "/dashboard", label: "Doctor Report" },
+  { href: "/dashboard", label: "Contractors Report" },
+  { href: "/dashboard", label: "Summary" },
 ];
 
 const SidenavLinks = () => {
@@ -37,7 +37,7 @@ const SidenavLinks = () => {
       <Link href={"/dashboard"}>
         <Button
           className={cn("items-center gap-2 justify-start w-full", {
-            "text-blue-600": pathname === "/dashboard",
+            "text-blue-600 hover:text-blue-500": pathname === "/dashboard",
           })}
           variant={"ghost"}
         >
@@ -49,7 +49,7 @@ const SidenavLinks = () => {
       <Link href={"/dashboard/profile"}>
         <Button
           className={cn("items-center gap-2 justify-start w-full", {
-            "text-blue-600": pathname === "/dashboard/profile",
+            "text-blue-600 hover:text-blue-500": pathname === "/dashboard/profile",
           })}
           variant={"ghost"}
         >
@@ -71,24 +71,33 @@ const SidenavLinks = () => {
         </CollapsibleTrigger>
         <CollapsibleContent>
           {collapsibleLinks.map((item, index) => (
-            <Button
-              key={item.label}
-              className="items-center gap-2 justify-start w-full"
-              variant={"ghost"}
-            >
-              <CircleIcon className="size-2" />
-              {item.label}
-            </Button>
+            <Link key={item.label} href={item.href}>
+              <Button
+                className={cn("items-center gap-2 justify-start w-full", {
+                  "text-blue-600 hover:text-blue-500": pathname === item.href,
+                })}
+                variant={"ghost"}
+              >
+                <CircleIcon className="size-2" />
+                {item.label}
+              </Button>
+            </Link>
           ))}
         </CollapsibleContent>
       </Collapsible>
 
-      <Button className="items-center gap-2 justify-start w-full" variant={"ghost"}>
+      <Button
+        className="items-center gap-2 justify-start w-full"
+        variant={"ghost"}
+      >
         <ScrollText className="size-5" />
         Invoice
       </Button>
       <Link href="/">
-        <Button className="items-center gap-2 justify-start w-full" variant={"ghost"}>
+        <Button
+          className="items-center gap-2 justify-start w-full"
+          variant={"ghost"}
+        >
           <LogOut className="size-5" />
           Log Out
         </Button>
