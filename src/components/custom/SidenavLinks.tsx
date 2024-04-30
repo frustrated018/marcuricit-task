@@ -37,7 +37,7 @@ const SidenavLinks = () => {
       <Link href={"/"}>
         <Button
           className={cn("items-center gap-2 justify-start w-full", {
-            "text-blue-600": pathname === "/",
+            "text-blue-600": pathname === "/dashboard",
           })}
           variant={"ghost"}
         >
@@ -46,10 +46,10 @@ const SidenavLinks = () => {
         </Button>
       </Link>
 
-      <Link href={"/profile"}>
+      <Link href={"/dashboard/profile"}>
         <Button
           className={cn("items-center gap-2 justify-start w-full", {
-            "text-blue-600": pathname === "/profile",
+            "text-blue-600": pathname === "/dashboard/profile",
           })}
           variant={"ghost"}
         >
