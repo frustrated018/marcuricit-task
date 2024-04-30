@@ -69,7 +69,7 @@ const Dashboard = () => {
             <CardTitle>Overview</CardTitle>
           </CardHeader>
           <CardContent className="pl-2">
-            <Overview />
+            <Overview color="#0ea5e9" />
           </CardContent>
         </Card>
 
